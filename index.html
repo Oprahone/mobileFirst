@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.min.css">
+    <title>Calculateur de temps libre</title>
+</head>
+<body>
+
+    <header>
+        <h1>Calculateur de temps libre</h1>
+    </header>
+
+    <form>
+        <section class="travail">
+            <h2>Temps de travail</h2>
+            <input type="number" min="0" max="24" name="TravailH" id="TravailH" placeholder="7">
+                <label for="TravailH">h</label>
+        </section>
+
+        <section class="transport">
+            <h2>Temps de transport</h2>
+            <input type="number" min="0" max="24"  name="TransportH" id="TransportH" placeholder="2">
+                <label for="TransportH">h</label>
+        </section>
+
+        <section class="repas">
+            <h2>Temps de repas</h2>
+            <input type="number" min="0" max="24"  name="RepasH" id="RepasH" placeholder="2">
+                <label for="RepasH">h</label>
+        </section>
+
+        <section class="sommeil">
+            <h2>Temps de sommeil</h2>
+            <input type="number" min="0" max="24"  name="SommeilH" id="SommeilH" placeholder="8">
+                <label for="SommeilH">h</label>
+        </section>
+
+        <input type="button" value="Calculer" id="Calculer">
+    </form>
+    <footer>
+        <h3>TEMPS LIBRE</h3>
+        <div id="Resultat">5 h</div>
+    </footer>
+</body>
+</html>
